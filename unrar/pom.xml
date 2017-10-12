@@ -3,7 +3,7 @@
 	<groupId>com.github</groupId>
 	<artifactId>junrar</artifactId>
 	<packaging>jar</packaging>
-	<version>0.7-qxu</version>
+	<version>0.7-SKL</version>
 	<name>Java UnRar</name>
 	<description>rar decompression library in plain java</description>
 	<url>https://github.com/edmund-wagner/junrar</url>

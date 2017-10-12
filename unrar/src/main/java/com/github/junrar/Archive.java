@@ -137,7 +137,7 @@ public class Archive implements Closeable {
 		} catch (Exception e) {
 			// Skl restore exception to let app knows something wrong here 
 			// and no need to resume extraction any more.
-			throw new IOException("Exception in archive constructor maybe file is encrypted or currupt.");
+			throw new IOException("Unrar archive constructor exception, file encrypted or currupt.");
 //			logger.log(Level.WARNING,
 //					"exception in archive constructor maybe file is encrypted or currupt", e);
 			// ignore exceptions to allow exraction of working files in
