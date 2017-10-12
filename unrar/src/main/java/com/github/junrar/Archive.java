@@ -135,9 +135,10 @@ public class Archive implements Closeable {
 		try {
 			readHeaders(length);
 		} catch (Exception e) {
-			logger.log(Level.WARNING,
-					"exception in archive constructor maybe file is encrypted "
-							+ "or currupt", e);
+			throw new IOException("Exception in archive constructor maybe file is encrypted or currupt.");
+//			logger.log(Level.WARNING,
+//					"exception in archive constructor maybe file is encrypted "
+//							+ "or currupt", e);
 			// ignore exceptions to allow exraction of working files in
 			// corrupt archive
 		}
